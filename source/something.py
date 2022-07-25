@@ -1,5 +1,5 @@
 def collatzgen(number):
-	while True
+	while True:
 		number = number * 3 + 1
 		while not(number % 2):
 			number / 2
