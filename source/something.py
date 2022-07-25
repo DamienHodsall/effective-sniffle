@@ -1,4 +1,13 @@
-def collatzgen(number: int) -> int:
+"""Collatz conjecture related things
+
+This file can be imported into another python file.
+
+collatz_gen is a generator for the Collatz sequence of a number.
+
+collatz returns a list containing the entire Collatz sequence of a given number.
+"""
+
+def collatz_gen(number: int) -> int:
     """generator for Collatz function
 
     Args:
@@ -29,4 +38,4 @@ def collatz(number: int) -> list:
         list: list containing the Collatz sequence for a given number
     """
 
-    return [number] + list(collatzgen(number))
+    return [number] + list(collatz_gen(number))
