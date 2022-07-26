@@ -5,6 +5,8 @@ on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
+    outputs:
+      output1: ${{ 'test output hopefully' }}
     strategy:
       matrix:
         python-version: ["3.8", "3.9", "3.10"]
