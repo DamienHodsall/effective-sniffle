@@ -1,0 +1,11 @@
+name: test-workflow
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: a test step
+      run: echo Hello World
+      shell: bash
