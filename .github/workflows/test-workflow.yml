@@ -12,4 +12,4 @@ jobs:
         print(collatz(2345))
         print('Hello World')
       shell: python
-      working-directory: ./src
+      working-directory: src
