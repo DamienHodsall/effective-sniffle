@@ -8,7 +8,8 @@ jobs:
     steps:
     - name: a test step
       run: |
-        from src.something import collatz
+        from something import collatz
         print(collatz(2345))
         print('Hello World')
       shell: python
+      working-directory: ./src
