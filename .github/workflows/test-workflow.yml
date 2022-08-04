@@ -8,8 +8,7 @@ jobs:
     steps:
     - name: a test step
       run: |
-        python3 -c 'from something import collatz
+        python3 -c 'from .src.something import collatz
                     print(collatz(2345))
                     print("Hello World")'
       shell: bash
-      working-directory: src
